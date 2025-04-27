@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hack Day Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TopClass</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+    .button {
+      background-color: white;
+      color: #0072ff;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #0072ff;
+      color: white;
+      border: 2px solid white;
+    }
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from Hack Day 🎉</h1>
-  <p>This site is deployed with GitHub Actions!</p>
+  <header>TopClass</header>
+  <p>Welcome to TopClass — Transform learning with an all-in-one
+LMS built for you!</p>
+  <a class="button" href="#get-started">Get Started</a>
+
+  <footer>© 2025 TopClass. All rights reserved.</footer>
 </body>
 </html>
