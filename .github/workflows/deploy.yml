@@ -1,22 +1,22 @@
-name: Deploy to GitHub Pages
+#name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches:
-      - main
+#on:
+#  push:
+ #   branches:
+ #     - main
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+#jobs:
+#  deploy:
+#    runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+ #   steps:
+  #    - name: Checkout code
+  #      uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          personal_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./
-          user_name: "patrick-hally"
-          user_email: "patrick-hally@users.noreply.github.com"
+   #   - name: Deploy to GitHub Pages
+   #     uses: peaceiris/actions-gh-pages@v4
+  #      with:
+   #       personal_token: ${{ secrets.GH_TOKEN }}
+    #      publish_dir: ./
+    #      user_name: "patrick-hally"
+    #      user_email: "patrick-hally@users.noreply.github.com"
